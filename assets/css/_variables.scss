@@ -83,6 +83,7 @@ $screen-desktop: "(min-width: 1280px)";
 /**
 * Layout
 */
+
 $container-width-mobile: 335px;
 $container-width-tablet: 728px;
 $container-width-desktop: 1280px;
@@ -90,3 +91,10 @@ $container-width-desktop: 1280px;
 $container-horizontal-padding-mobile: 16px;
 $container-horizontal-padding-tablet: 40px;
 $container-horizontal-padding-desktop: 80px;
+
+/**
+* Radius
+*/
+
+$border-radius-small: 12px;
+$border-radius-medium: 24px;

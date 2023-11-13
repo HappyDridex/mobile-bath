@@ -6,11 +6,11 @@
                     alt="Фото бани">
             </div>
             <div class="introduction__grid-item introduction__grid-pic-2">
-                <img src="/images/bath-photo-1.png"
+                <img src="/images/bath-photo-2-plug.png"
                     alt="Фото бани">
             </div>
             <div class="introduction__grid-item introduction__grid-pic-3">
-                <img src="/images/bath-photo-1.png"
+                <img src="/images/bath-photo-3.png"
                     alt="Фото бани">
             </div>
             <div class="introduction__grid-item introduction__grid-booking">
@@ -20,7 +20,7 @@
                 <h1 class="title title--xxl">АРЕНДА <br> БАНИ-БОЧКИ</h1>
             </div>
             <div class="introduction__grid-item introduction__grid-pic-4">
-                <img src="/images/bath-photo-1.png"
+                <img src="/images/bath-photo-4-plug.png"
                     alt="Фото бани">
             </div>
         </div>
@@ -42,11 +42,29 @@
             "title title"
             "pic4 pic4"
         ;
+        gap: 12px;
 
+        @media #{$screen-tablet} {
+            gap: 16px;
+        }
+
+        @media #{$screen-desktop} {
+            gap: 24px;
+        }
 
         &-item {
-            width: 100%;
-            height: 100%;
+            overflow: hidden;
+            border-radius: $border-radius-small;
+
+            @media #{$screen-tablet} {
+                border-radius: $border-radius-medium;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
         &-pic-1 {
