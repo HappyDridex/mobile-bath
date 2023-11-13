@@ -1,0 +1,19 @@
+.container {
+    max-width: $container-width-desktop;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: $container-horizontal-padding-mobile;
+    padding-right: $container-horizontal-padding-mobile;
+
+    @media #{$screen-tablet} {
+        padding-left: $container-horizontal-padding-tablet;
+        padding-right: $container-horizontal-padding-tablet;
+    }
+
+    @media #{$screen-desktop} {
+        padding-left: $container-horizontal-padding-desktop;
+        padding-right: $container-horizontal-padding-desktop;
+    }
+}

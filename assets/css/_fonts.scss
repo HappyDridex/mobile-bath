@@ -1,0 +1,31 @@
+@font-face {
+    $font-name: "#{$font-family-custom-1}-Regular";
+    font-family: $font-family-custom-1;
+    font-weight: $font-weight-regular;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-name}.otf") format("opentype");
+}
+
+@font-face {
+    $font-name: "#{$font-family-custom-1}-Bold";
+    font-family: $font-family-custom-1;
+    font-weight: $font-weight-bold;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-name}.otf") format("opentype");
+}
+
+@font-face {
+    $font-name: "#{$font-family-custom-1}-Heavy";
+    font-family: $font-family-custom-1;
+    font-weight: $font-weight-heavy;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-name}.otf") format("opentype");
+}
+
+@font-face {
+    $font-name: "#{$font-family-custom-2}-Regular";
+    font-family: $font-family-custom-2;
+    font-weight: $font-weight-regular;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-name}.ttf") format("truetype");
+}

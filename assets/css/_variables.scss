@@ -1,0 +1,92 @@
+/**
+* Colors
+*
+*/
+
+// static
+
+$cod-gray: #171717;
+$peach-cream: #fff1df;
+$la-palma: #1f950c;
+$cola: #351f00;
+$monza: #bb002d;
+$hibiscus: #be3455;
+$dusty-gray: #999999;
+
+// dynamic
+
+$color-background-dark: $cod-gray;
+$color-primary-dark: $cod-gray;
+$color-primary-light: $peach-cream;
+$color-accent: $la-palma;
+$color-substrates: rgba($cola, 0.8);
+$color-day-off: $monza;
+$color-weekend: rgba($hibiscus, 0.5);
+$color-days-of-week: $dusty-gray;
+
+/**
+* Fonts
+*/
+
+// family
+$font-path: "/fonts";
+$font-family-default: "Arial", "Helvetica", sans-serif;
+$font-family-custom-1: "SF-Pro-Text";
+$font-family-custom-2: "MorfinSans";
+
+$font-family-primary: $font-family-custom-1, $font-family-default;
+$font-family-secondary: $font-family-custom-2, $font-family-default;
+
+// weight
+$font-weight-heavy: 800;
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+
+// font size
+
+$font-size-huge-1: 148px;
+$font-size-huge-2: 92px;
+$font-size-huge-3: 64px;
+$font-size-huge-4: 52px;
+$font-size-huge-5: 44px;
+$font-size-huge-6: 32px;
+
+$font-size-large: 24px;
+$font-size-big: 20px;
+$font-size-medium: 18px;
+$font-size-normal: 16px;
+$font-size-small: 14px;
+$font-size-tiny: 12px;
+
+$line-height-huge: 2;
+$line-height-large: 1.67;
+$line-height-big: 1.5;
+$line-height-medium: 1.27;
+$line-height-small: 1;
+
+/**
+* Sizes
+*/
+
+$icon-size-mini: 16px;
+$icon-size-medium: 28px;
+$icon-size-big: 32px;
+$icon-size-huge: 50px;
+
+/**
+* Breakpoints
+*/
+
+$screen-tablet: "(min-width: 768px)";
+$screen-desktop: "(min-width: 1280px)";
+
+/**
+* Layout
+*/
+$container-width-mobile: 335px;
+$container-width-tablet: 728px;
+$container-width-desktop: 1280px;
+
+$container-horizontal-padding-mobile: 16px;
+$container-horizontal-padding-tablet: 40px;
+$container-horizontal-padding-desktop: 80px;

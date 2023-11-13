@@ -1,0 +1,44 @@
+///// text
+
+// 92-148
+@mixin text-xxl {
+    font-size: $font-size-huge-2;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-huge-1;
+    }
+}
+
+// 52-64
+@mixin text-huge {
+    font-size: $font-size-huge-4;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-huge-3;
+    }
+}
+
+// 32-44
+@mixin text-big {
+    font-size: $font-size-huge-6;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-huge-5;
+    }
+}
+
+// 14-18
+@mixin text-small {
+    font-size: $font-size-small;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-medium;
+    }
+}
+
+////// display
+
+@mixin reset-vertical-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}

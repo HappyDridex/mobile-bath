@@ -1,0 +1,16 @@
+.title {
+    font-family: $font-family-secondary;
+    letter-spacing: -0.3px;
+
+    &--xxl {
+        @include text-xxl;
+    }
+
+    &--huge {
+        @include text-huge;
+    }
+
+    &--big {
+        @include text-big;
+    }
+}
