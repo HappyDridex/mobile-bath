@@ -36,9 +36,105 @@
     }
 }
 
+@mixin text-ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    overflow: hidden;
+}
+
+@mixin line-clamp($lines) {
+    display: -webkit-box;
+
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
 ////// display
 
 @mixin reset-vertical-margin {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+@mixin flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-col-center($gap: 0) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem($gap);
+}
+
+@mixin flex-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// position
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+@mixin absolute-all-null {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@mixin fixed-all-null {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@mixin reset-vertical-identation-of-first {
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+@mixin reset-vertical-identation-of-last {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin reset-vertical-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin reset-horizontal-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@mixin object-contain-full {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@mixin object-cover-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

@@ -1,9 +1,10 @@
 .title {
     font-family: $font-family-secondary;
-    letter-spacing: -0.3px;
+    line-height: $line-height-small;
 
     &--xxl {
         @include text-xxl;
+        letter-spacing: -2px;
     }
 
     &--huge {

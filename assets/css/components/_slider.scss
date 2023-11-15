@@ -1,0 +1,16 @@
+.slider {
+    &__item {
+    }
+
+    &--about-bath {
+        .swiper-wrapper {
+            align-items: center !important;
+        }
+
+        .swiper-slide-prev {
+        }
+
+        .swiper-slide-next {
+        }
+    }
+}

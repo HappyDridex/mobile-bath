@@ -9,11 +9,12 @@ export default defineNuxtConfig({
             },
         },
     },
-    css: ["@/assets/css/_main.scss"],
+    css: ['@/assets/css/_main.scss'],
     postcss: {
         plugins: {
             autoprefixer: {},
             cssnano: {},
         },
     },
+    modules: ['nuxt-swiper'],
 });

@@ -1,0 +1,94 @@
+<template>
+    <figure class="photo-card-with-caption">
+        <img class="photo-card-with-caption__image"
+            :src="imageSrc"
+            alt="Картинка карточки">
+        <div class="photo-card-with-caption__caption-plate"
+            :class="{ 'photo-card-with-caption__caption-plate--bottomed': captionPlateOnBottom }">
+            <figcaption class="photo-card-with-caption__caption">{{ caption }}</figcaption>
+        </div>
+    </figure>
+</template>
+
+<script setup lang="ts">
+defineProps({
+    imageSrc: {
+        type: String,
+        required: true
+    },
+    caption: {
+        type: String,
+        required: true
+    },
+    captionPlateOnBottom: {
+        type: Boolean,
+        required: false
+    }
+})
+
+</script>
+
+<style lang="scss" scoped>
+@import "@/assets/css/_mixins.scss";
+
+.photo-card-with-caption {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: $border-radius-small;
+
+    @media #{$screen-tablet} {
+        border-radius: $border-radius-medium;
+    }
+
+    &__image {
+        @include object-cover-full;
+    }
+
+    &__caption-plate {
+        @include flex-all-center;
+
+        position: absolute;
+        bottom: 40px;
+
+        width: 100%;
+        padding: 12px 8px;
+
+
+        border-radius: $border-radius-small;
+
+        background-color: rgba($cola, 0.8);
+        backdrop-filter: blur(2px);
+
+        @media #{$screen-tablet} {
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            border-radius: $border-radius-normal;
+        }
+
+        @media #{$screen-desktop} {
+            border-radius: $border-radius-medium;
+        }
+
+        &--bottomed {
+            bottom: 0;
+        }
+    }
+
+    &__caption {
+        font-size: $font-size-tiny;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-medium;
+        text-align: center;
+
+        @media #{$screen-tablet} {
+            font-size: $font-size-big;
+        }
+    }
+}
+</style>
