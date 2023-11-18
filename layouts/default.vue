@@ -2,6 +2,7 @@
     <div class="default-layout">
         <TheHeader />
         <NuxtPage />
+        <TheFooter />
     </div>
 </template>
 

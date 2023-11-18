@@ -3,6 +3,8 @@
         <ViewsIndexIntroduction class="index-page__section" />
         <LazyViewsIndexWhyBath class="index-page__section" />
         <LazyViewsIndexAboutBath class="index-page__section" />
+        <LazyViewsIndexRentConditions class="index-page__section" />
+        <LazyViewsIndexRentSteps class="index-page__section" />
     </main>
 </template>
 
@@ -19,6 +21,14 @@ definePageMeta({ layout: "default" });
         @include reset-vertical-identation-of-first;
 
         margin-top: 64px;
+
+        @media #{$screen-tablet} {
+            margin-top: 80px;
+        }
+
+        @media #{$screen-desktop} {
+            margin-top: 140px;
+        }
     }
 }
 </style>

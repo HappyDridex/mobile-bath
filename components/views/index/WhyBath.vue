@@ -12,23 +12,19 @@
         <ul class="why-bath__gallery">
             <li class="why-bath__gallery-item">
                 <UiPhotoCardWithCaption :image-src="cardImage1"
-                    :caption="'Приедет куда угодно'"
-                    caption-plate-on-bottom />
+                    :caption="'Приедет куда угодно'" />
             </li>
             <li class="why-bath__gallery-item">
                 <UiPhotoCardWithCaption :image-src="cardImage2"
-                    :caption="'Разогреется за 30 минут'"
-                    caption-plate-on-bottom />
+                    :caption="'Разогреется за 30 минут'" />
             </li>
             <li class="why-bath__gallery-item">
                 <UiPhotoCardWithCaption :image-src="cardImage3"
-                    :caption="'Комфортный микроклимат'"
-                    caption-plate-on-bottom />
+                    :caption="'Комфортный микроклимат'" />
             </li>
             <li class="why-bath__gallery-item">
                 <UiPhotoCardWithCaption :image-src="cardImage4"
-                    :caption="'Современный дизайн'"
-                    caption-plate-on-bottom />
+                    :caption="'Современный дизайн'" />
             </li>
         </ul>
     </section>
@@ -103,4 +99,5 @@ import cardImage4 from "/images/benefit-card-photo-4.png"
             aspect-ratio: 1 / 1;
         }
     }
-}</style>
+}
+</style>

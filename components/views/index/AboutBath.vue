@@ -10,30 +10,34 @@
                     },
                     768: {
                         spaceBetween: 24,
-                        slidesPerView: 2.5
+                        slidesPerView: 'auto'
                     },
                     1440: {
                         spaceBetween: 24,
-                        slidesPerView: 4
+                        slidesPerView: 'auto'
                     }
                 }"
                 grab-cursor
                 :slide-active-class="'about-bath__slider-item--active'">
                 <SwiperSlide class="about-bath__slider-item">
                     <UiPhotoCardWithCaption :image-src="cardImage1"
-                        :caption="'Диодное автономное освещение'" />
+                        :caption="'Диодное автономное освещение'"
+                        :caption-plate-bottom-position="'5%'" />
                 </SwiperSlide>
                 <SwiperSlide class="about-bath__slider-item">
                     <UiPhotoCardWithCaption :image-src="cardImage2"
-                        :caption="'Вместительная парная и предбанник'" />
+                        :caption="'Вместительная парная и предбанник'"
+                        :caption-plate-bottom-position="'5%'" />
                 </SwiperSlide>
                 <SwiperSlide class="about-bath__slider-item">
                     <UiPhotoCardWithCaption :image-src="cardImage3"
-                        :caption="'Печь Ермак с паропреобразователем'" />
+                        :caption="'Печь Ермак с паропреобразователем'"
+                        :caption-plate-bottom-position="'5%'" />
                 </SwiperSlide>
                 <SwiperSlide class="about-bath__slider-item">
                     <UiPhotoCardWithCaption :image-src="cardImage4"
-                        :caption="'Природный материал: ель и осина'" />
+                        :caption="'Природный материал: ель и осина'"
+                        :caption-plate-bottom-position="'5%'" />
                 </SwiperSlide>
             </Swiper>
         </div>
@@ -50,9 +54,9 @@ import cardImage4 from "/images/about-card-photo-4.png"
 
 
 <style lang="scss" scoped>
-.about-bath {
-    padding-bottom: 200px;
+@import "@/assets/css/_mixins.scss";
 
+.about-bath {
 
     &__title {
         margin-bottom: 24px;
@@ -60,34 +64,39 @@ import cardImage4 from "/images/about-card-photo-4.png"
 
     &__slider {
 
-
         &-container {
+            height: 72vw;
             padding-left: 18px;
+            overflow: hidden;
 
             @media #{$screen-tablet} {
+                height: 516px;
                 padding-left: 40px;
             }
 
             @media #{$screen-desktop} {
                 padding-left: 80px;
+                @include margin-left-to-container;
             }
         }
 
         &-item {
-            aspect-ratio: 1 / 1.6;
+            height: 90%;
 
             transition: all .7s ease;
 
+            @media #{$screen-tablet} {
+                width: 298px !important;
+            }
+
             @media #{$screen-desktop} {
-                max-width: 298px;
+                height: 100%;
             }
 
             &--active {
-                aspect-ratio: 1 / 1.65;
+                height: 100%;
             }
-
         }
     }
-
 }
 </style>

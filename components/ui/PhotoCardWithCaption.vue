@@ -2,9 +2,10 @@
     <figure class="photo-card-with-caption">
         <img class="photo-card-with-caption__image"
             :src="imageSrc"
-            alt="Картинка карточки">
+            alt="Картинка карточки"
+            loading="lazy">
         <div class="photo-card-with-caption__caption-plate"
-            :class="{ 'photo-card-with-caption__caption-plate--bottomed': captionPlateOnBottom }">
+            :style="{ bottom: `${captionPlateBottomPosition}` }">
             <figcaption class="photo-card-with-caption__caption">{{ caption }}</figcaption>
         </div>
     </figure>
@@ -20,8 +21,8 @@ defineProps({
         type: String,
         required: true
     },
-    captionPlateOnBottom: {
-        type: Boolean,
+    captionPlateBottomPosition: {
+        type: String,
         required: false
     }
 })
@@ -53,7 +54,7 @@ defineProps({
         @include flex-all-center;
 
         position: absolute;
-        bottom: 40px;
+        bottom: 0;
 
         width: 100%;
         padding: 12px 8px;
@@ -75,9 +76,6 @@ defineProps({
             border-radius: $border-radius-medium;
         }
 
-        &--bottomed {
-            bottom: 0;
-        }
     }
 
     &__caption {
