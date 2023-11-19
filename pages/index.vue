@@ -5,6 +5,8 @@
         <LazyViewsIndexAboutBath class="index-page__section" />
         <LazyViewsIndexRentConditions class="index-page__section" />
         <LazyViewsIndexRentSteps class="index-page__section" />
+        <LazyViewsIndexAdditionalServices class="index-page__section" />
+        <ViewsIndexContacts class="index-page__section" />
     </main>
 </template>
 

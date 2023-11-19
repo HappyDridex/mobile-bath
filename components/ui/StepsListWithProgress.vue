@@ -32,6 +32,8 @@ interface IStepsList {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/css/_mixins.scss";
+
 .steps-list-with-progress {
     $mobile-left-padding: 24px;
     $tablet-left-padding: 40px;
@@ -95,7 +97,7 @@ interface IStepsList {
         &::before {
             position: absolute;
             top: 0;
-            left: -$mobile-left-padding + $marker-size-mobile / 2;
+            left: calc(-#{$mobile-left-padding} + #{$marker-size-mobile} / 2);
 
             width: 2px;
             height: calc(100% - $marker-size-mobile);
@@ -107,7 +109,7 @@ interface IStepsList {
             content: "";
 
             @media #{$screen-tablet} {
-                left: -$tablet-left-padding + $marker-size-tablet / 2;
+                left: calc(-#{$tablet-left-padding} + #{$marker-size-tablet} / 2);
 
                 width: 3px;
                 height: calc(100% - $marker-size-tablet);
@@ -138,13 +140,10 @@ interface IStepsList {
         }
 
         &-title {
-            font-size: $font-size-normal;
+            @include text-normal;
+
             line-height: $line-height-medium;
             font-weight: $font-weight-bold;
-
-            @media #{$screen-tablet} {
-                font-size: $font-size-large;
-            }
         }
 
         &-text {

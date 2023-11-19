@@ -27,6 +27,15 @@
     }
 }
 
+// 16-24
+@mixin text-normal {
+    font-size: $font-size-normal;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-large;
+    }
+}
+
 // 14-18
 @mixin text-small {
     font-size: $font-size-small;

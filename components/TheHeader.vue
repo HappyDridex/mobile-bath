@@ -2,7 +2,7 @@
     <header class="header">
         <div class="header__inner container">
             <h2 class="header__title title title--big">БАНЯ-БОЧКА</h2>
-            <a href="#"
+            <a href="tel:+79150544714"
                 class="header__phone">
                 <IconsPhoneOutline class="header__phone-icon" />
                 <span class="header__phone-text">

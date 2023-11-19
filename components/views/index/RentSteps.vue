@@ -80,9 +80,6 @@ const steps = [
             border-radius: $border-radius-medium
         }
 
-        @media #{$screen-tablet} {
-            flex-shrink: 0;
-        }
 
         &-pic {
             @include object-cover-full;

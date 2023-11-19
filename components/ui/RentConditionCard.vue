@@ -51,13 +51,10 @@ interface IConditionCard {
 
     &__title,
     &__price {
-        font-size: $font-size-normal;
+        @include text-normal;
+
         font-weight: $font-weight-bold;
         line-height: $line-height-medium;
-
-        @media #{$screen-tablet} {
-            font-size: $font-size-large;
-        }
     }
 
     &__title {
