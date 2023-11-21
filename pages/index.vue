@@ -3,6 +3,7 @@
         <ViewsIndexIntroduction class="index-page__section" />
         <LazyViewsIndexWhyBath class="index-page__section" />
         <LazyViewsIndexAboutBath class="index-page__section" />
+        <LazyViewsIndexBookingDate class="index-page__section" />
         <LazyViewsIndexRentConditions class="index-page__section" />
         <LazyViewsIndexRentSteps class="index-page__section" />
         <LazyViewsIndexAdditionalServices class="index-page__section" />

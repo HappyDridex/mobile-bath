@@ -38,6 +38,8 @@ defineProps({
         align-items: center;
         gap: 4px;
 
+        width: fit-content;
+
         @media #{$screen-tablet} {
             gap: 8px;
         }

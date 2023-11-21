@@ -1,3 +1,5 @@
+@import '@vuepic/vue-datepicker/dist/main.css';
+
 @import './normalize.css';
 @import './mixins';
 @import './fonts';
@@ -7,3 +9,5 @@
 @import './components/container';
 @import './components/title';
 @import './components/slider';
+@import './components/form';
+@import './components/datepicker';

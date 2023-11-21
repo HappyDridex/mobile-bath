@@ -1,0 +1,259 @@
+.datepicker {
+    width: fit-content;
+
+    .dp {
+        $width-mobile: 343px;
+        $width-tablet: 636px;
+
+        $cell-size-mobile: 26px;
+        $cell-size-tablet: 52px;
+
+        $border-radius-mobile: $border-radius-small;
+        $border-radius-tablet: $border-radius-big;
+
+        &__main {
+            font-family: $font-family-primary !important;
+        }
+
+        &__menu {
+            font-family: $font-family-primary !important;
+            font-size: $font-size-tiny;
+            font-weight: $font-weight-heavy;
+            line-height: $line-height-medium;
+
+            width: $width-mobile !important;
+
+            border: none;
+            border-radius: $border-radius-mobile;
+            background-color: $color-primary-light;
+
+            @media #{$screen-tablet} {
+                font-size: $font-size-large;
+
+                width: $width-tablet !important;
+            }
+
+            &_inner {
+                padding: 18px 22px;
+
+                @media #{$screen-tablet} {
+                    padding: 45px;
+                }
+            }
+        }
+
+        &__month_year_row {
+            font-family: $font-family-secondary;
+            font-size: $font-size-huge-7;
+            line-height: 66%;
+            letter-spacing: 0.5px;
+
+            height: 28px;
+
+            color: $color-primary-dark;
+
+            @media #{$screen-tablet} {
+                font-size: $font-size-huge-4;
+
+                height: 58px;
+            }
+        }
+
+        &__month_year_select {
+            height: 28px;
+
+            @media #{$screen-tablet} {
+                height: 58px;
+            }
+
+            &:hover {
+                color: $color-primary-dark;
+                background-color: rgba($color-accent, 0.5);
+            }
+        }
+
+        &__inner_nav {
+            width: $cell-size-mobile;
+            height: $cell-size-mobile;
+
+            @media #{$screen-tablet} {
+                width: $cell-size-tablet;
+                height: $cell-size-tablet;
+            }
+
+            &:hover {
+                background-color: rgba($color-accent, 0.5);
+                color: $color-primary-dark;
+            }
+
+            svg {
+                width: calc($cell-size-mobile / 2);
+                height: calc($cell-size-mobile / 2);
+
+                @media #{$screen-tablet} {
+                    width: calc($cell-size-tablet / 2);
+                    height: calc($cell-size-tablet / 2);
+                }
+            }
+        }
+
+        &__calendar {
+            &_header {
+                font-size: $font-size-tiny;
+                font-weight: $font-weight-heavy;
+                line-height: normal;
+                text-transform: uppercase;
+
+                margin: 8px 0 12px 0;
+
+                color: $dusty-gray;
+
+                @media #{$screen-tablet} {
+                    font-size: $font-size-large;
+
+                    margin: 24px 0 24px 0;
+                }
+
+                &_item {
+                    text-align: start;
+
+                    width: $cell-size-mobile;
+                    height: $cell-size-mobile;
+                    padding: 6px 3px;
+
+                    @media #{$screen-tablet} {
+                        width: $cell-size-tablet;
+                        height: $cell-size-tablet;
+                        padding: 12px 8px;
+                    }
+
+                    &:last-child {
+                        flex-grow: 0;
+                    }
+                }
+
+                &_separator {
+                    display: none;
+                }
+            }
+
+            &_row {
+                margin: 8px 0;
+
+                @media #{$screen-tablet} {
+                    margin: 12px 0;
+                }
+            }
+
+            &_item {
+                color: $color-primary-dark;
+
+                &:last-child {
+                    flex-grow: 0;
+                }
+            }
+        }
+
+        &__cell {
+            &_inner {
+                width: $cell-size-mobile;
+                height: $cell-size-mobile;
+
+                padding: 4px 9px;
+
+                border-style: dashed;
+                border-radius: $border-radius-minimal;
+
+                @media #{$screen-tablet} {
+                    width: $cell-size-tablet;
+                    height: $cell-size-tablet;
+
+                    padding: 10px 19px;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    border-color: $color-accent;
+                }
+            }
+
+            &_highlight {
+                background-color: transparent;
+                color: $color-day-off;
+            }
+
+            &_disabled,
+            &_offset {
+                color: $color-disabled-days-of-week;
+            }
+        }
+
+        &__today {
+            border-radius: 50%;
+            border-color: $color-accent;
+        }
+
+        &__active_date,
+        &__range_start,
+        &__range_end {
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+        }
+
+        &__range_start {
+            color: $color-accent;
+        }
+
+        &__range_between {
+            border: none;
+            background-color: transparent;
+            color: rgba($color-accent, 0.5);
+        }
+
+        &__range_end {
+            color: $color-accent;
+        }
+
+        &__overlay {
+            font-family: $font-family-primary;
+            font-size: $font-size-large;
+            line-height: $line-height-medium;
+
+            border: none;
+            border-radius: $border-radius-mobile;
+            background-color: $color-primary-light;
+
+            @media #{$screen-tablet} {
+                font-size: $font-size-huge-6;
+            }
+
+            &_cell {
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+
+            &_cell_active {
+                color: $color-primary-dark;
+                background-color: rgba($color-accent, 0.5);
+            }
+        }
+
+        &__button {
+            padding: 10px;
+
+            color: $color-primary-dark;
+            background-color: rgba($color-accent, 0.5);
+
+            @media #{$screen-tablet} {
+                padding: 30px 10px;
+            }
+
+            &_bottom {
+                border-bottom-left-radius: $border-radius-mobile;
+                border-bottom-right-radius: $border-radius-mobile;
+            }
+        }
+    }
+}

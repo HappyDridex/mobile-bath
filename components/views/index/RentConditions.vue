@@ -92,7 +92,7 @@ const cards = [
         border-radius: $border-radius-small;
 
         @media #{$screen-tablet} {
-            border-radius: $border-radius-medium;
+            border-radius: $border-radius-big;
         }
 
         &-pic {

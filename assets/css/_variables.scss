@@ -22,7 +22,7 @@ $color-accent: $la-palma;
 $color-substrates: rgba($cola, 0.8);
 $color-day-off: $monza;
 $color-weekend: rgba($hibiscus, 0.5);
-$color-days-of-week: $dusty-gray;
+$color-disabled-days-of-week: $dusty-gray;
 
 /**
 * Fonts
@@ -50,6 +50,7 @@ $font-size-huge-3: 64px;
 $font-size-huge-4: 52px;
 $font-size-huge-5: 44px;
 $font-size-huge-6: 32px;
+$font-size-huge-7: 30px;
 
 $font-size-large: 24px;
 $font-size-big: 20px;
@@ -98,8 +99,9 @@ $container-horizontal-padding-desktop: 80px;
 * Radius
 */
 
-$border-radius-medium: 24px;
-$border-radius-normal: 20px;
+$border-radius-big: 24px;
+$border-radius-medium: 20px;
+$border-radius-normal: 16px;
 $border-radius-small: 12px;
 $border-radius-mini: 8px;
 $border-radius-micro: 6px;

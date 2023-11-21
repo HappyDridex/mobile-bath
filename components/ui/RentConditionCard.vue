@@ -42,7 +42,7 @@ interface IConditionCard {
         height: 156px;
         padding: 24px;
 
-        border-radius: $border-radius-medium;
+        border-radius: $border-radius-big;
     }
 
     &__header {

@@ -43,7 +43,7 @@ defineProps({
     border-radius: $border-radius-small;
 
     @media #{$screen-tablet} {
-        border-radius: $border-radius-medium;
+        border-radius: $border-radius-big;
     }
 
     &__image {
@@ -69,11 +69,11 @@ defineProps({
             padding-top: 20px;
             padding-bottom: 20px;
 
-            border-radius: $border-radius-normal;
+            border-radius: $border-radius-medium;
         }
 
         @media #{$screen-desktop} {
-            border-radius: $border-radius-medium;
+            border-radius: $border-radius-big;
         }
 
     }
