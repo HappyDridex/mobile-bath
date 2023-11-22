@@ -40,8 +40,6 @@ const cards = [
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
 .rent-conditions {
     &__title {
         margin-bottom: 24px;

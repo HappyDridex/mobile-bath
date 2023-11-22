@@ -32,8 +32,6 @@ interface IStepsList {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
 .steps-list-with-progress {
     $mobile-left-padding: 24px;
     $tablet-left-padding: 40px;

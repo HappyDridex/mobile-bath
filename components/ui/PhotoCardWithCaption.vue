@@ -30,8 +30,6 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
 .photo-card-with-caption {
     position: relative;
 

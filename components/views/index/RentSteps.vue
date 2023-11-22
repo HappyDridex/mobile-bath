@@ -38,8 +38,6 @@ const steps = [
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
 .rent-steps {
     @include flex-col-center(24px);
 

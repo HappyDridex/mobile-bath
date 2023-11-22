@@ -5,7 +5,8 @@
                 'base-button__button--green': theme === 'green',
                 'base-button__button--long': fullWidth
             }"
-            :type="type || 'button'">
+            :type="type || 'button'"
+            :disabled="disabled">
             {{ text }}
         </button>
     </div>
@@ -30,6 +31,10 @@ defineProps({
     fullWidth: {
         type: Boolean,
         required: false
+    },
+    disabled: {
+        type: Boolean,
+        required: false
     }
 })
 </script>
@@ -37,6 +42,8 @@ defineProps({
 <style lang="scss" scoped>
 .base-button {
     &__button {
+        @include base-transition;
+
         font-size: $font-size-small;
         font-weight: $font-weight-bold;
         line-height: $line-height-medium;
@@ -61,6 +68,10 @@ defineProps({
 
         &--green {
             background-color: $color-accent;
+        }
+
+        &:disabled {
+            opacity: 0.5;
         }
     }
 }

@@ -17,24 +17,27 @@
                         slidesPerView: 'auto'
                     }
                 }"
-                grab-cursor
-                :slide-active-class="'about-bath__slider-item--active'">
+                grab-cursor>
                 <SwiperSlide class="about-bath__slider-item">
+
                     <UiPhotoCardWithCaption :image-src="cardImage1"
                         :caption="'Диодное автономное освещение'"
                         :caption-plate-bottom-position="'5%'" />
                 </SwiperSlide>
                 <SwiperSlide class="about-bath__slider-item">
+
                     <UiPhotoCardWithCaption :image-src="cardImage2"
                         :caption="'Вместительная парная и предбанник'"
                         :caption-plate-bottom-position="'5%'" />
                 </SwiperSlide>
                 <SwiperSlide class="about-bath__slider-item">
+
                     <UiPhotoCardWithCaption :image-src="cardImage3"
                         :caption="'Печь Ермак с паропреобразователем'"
                         :caption-plate-bottom-position="'5%'" />
                 </SwiperSlide>
                 <SwiperSlide class="about-bath__slider-item">
+
                     <UiPhotoCardWithCaption :image-src="cardImage4"
                         :caption="'Природный материал: ель и осина'"
                         :caption-plate-bottom-position="'5%'" />
@@ -54,8 +57,6 @@ import cardImage4 from "/images/about-card-photo-4.png"
 
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
 .about-bath {
 
     &__title {

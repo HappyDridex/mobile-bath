@@ -17,8 +17,6 @@ definePageMeta({ layout: "default" });
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
 .index-page {
     &__section {
         @include reset-vertical-identation-of-first;

@@ -29,8 +29,6 @@ interface IConditionCard {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
 .rent-condition-card {
     height: 100px;
     padding: 12px;

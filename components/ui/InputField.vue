@@ -4,14 +4,17 @@
             :type="type || 'text'"
             :placeholder="placeholder"
             v-model="value"
+            :disabled="disabled"
             @input="onInput">
     </div>
 </template>
 
 <script setup lang="ts">
+import { returnOnlyNumbers, returnTelFomat } from '@/utils/validation';
+
 const emit = defineEmits(["value-changed"])
 
-defineProps({
+const props = defineProps({
     currentVal: {
         type: String,
         required: true
@@ -20,17 +23,48 @@ defineProps({
         type: String,
         required: false
     },
+    disabled: {
+        type: Boolean,
+        required: false
+    },
     type: {
         type: String,
+        required: false
+    },
+    onlyNumbers: {
+        type: Boolean,
+        required: false
+    },
+    telFormat: {
+        type: Boolean,
         required: false
     }
 })
 
 const value = ref("")
 
-function onInput() {
-    emit("value-changed", value.value)
+
+function onInput(evt: Event) {
+    if (!evt?.target) {
+        return
+    }
+    let inputText = (evt.target as HTMLInputElement).value;
+
+    if (props.onlyNumbers) {
+        inputText = returnOnlyNumbers(value.value);
+    } else if (props.telFormat) {
+        inputText = returnTelFomat(value.value);
+    } else {
+        emit("value-changed", inputText);
+        return
+    }
+    value.value = inputText;
+    emit("value-changed", inputText);
 }
+
+watchEffect(() => {
+    value.value = props.currentVal
+})
 
 </script>
 

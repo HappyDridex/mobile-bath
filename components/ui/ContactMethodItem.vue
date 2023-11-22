@@ -30,8 +30,6 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
 .contact-method-item {
     &__link {
         display: flex;

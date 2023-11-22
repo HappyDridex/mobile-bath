@@ -1,18 +1,33 @@
 .form {
+    $vertical-margin-mobile: 16px;
+    $vertical-margin-tablet: 32px;
+    $vertical-margin-desktop: 58px;
+
     &__fieldset {
+        @include reset-vertical-identation-of-last;
+
+        margin-bottom: $vertical-margin-mobile;
+
+        @media #{$screen-tablet} {
+            margin-bottom: $vertical-margin-tablet;
+        }
+
+        @media #{$screen-desktop} {
+            margin-bottom: $vertical-margin-desktop;
+        }
     }
 
     &__field {
         @include reset-vertical-identation-of-first;
 
-        margin-top: 16px;
+        margin-top: $vertical-margin-mobile;
 
         @media #{$screen-tablet} {
-            margin-top: 32px;
+            margin-top: $vertical-margin-tablet;
         }
 
         @media #{$screen-desktop} {
-            margin-top: 58px;
+            margin-top: $vertical-margin-desktop;
         }
     }
 }

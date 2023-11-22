@@ -39,9 +39,6 @@ import cardImage4 from "/images/benefit-card-photo-4.png"
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
-
 .why-bath {
     display: flex;
     flex-direction: column;

@@ -13,8 +13,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import "@/assets/css/_mixins.scss";
-
 .button-book {
     position: relative;
 
