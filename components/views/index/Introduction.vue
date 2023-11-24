@@ -9,6 +9,7 @@
                 <video src="/videos/test2.mp4"
                     muted
                     autoplay
+                    playsinline
                     loop></video>
             </div>
             <div class="introduction__grid-item introduction__grid-pic-3">
@@ -25,6 +26,7 @@
                 <video src="/videos/test.mp4"
                     muted
                     autoplay
+                    playsinline
                     loop></video>
             </div>
         </div>
