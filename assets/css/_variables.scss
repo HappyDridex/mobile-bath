@@ -113,3 +113,13 @@ $border-radius-minimal: 4px;
 
 $transition-duration: 0.2s;
 $transition-timing-function: ease-in-out;
+
+/**
+* Box-shadow
+*/
+$box-shadow-small: 0px 7px 26px 0px rgba(86, 154, 255, 0.16);
+
+/**
+* Z-index
+*/
+$booking-popup-z: 10;

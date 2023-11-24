@@ -6,8 +6,10 @@
                     alt="Фото бани">
             </div>
             <div class="introduction__grid-item introduction__grid-pic-2">
-                <img src="/images/bath-photo-2-plug.png"
-                    alt="Фото бани">
+                <video src="/videos/test2.mp4"
+                    muted
+                    autoplay
+                    loop></video>
             </div>
             <div class="introduction__grid-item introduction__grid-pic-3">
                 <img src="/images/bath-photo-3.png"
@@ -20,8 +22,10 @@
                 <h1 class="title title--xxl">АРЕНДА <br class="introduction__grid-title-br">БАНИ-БОЧКИ</h1>
             </div>
             <div class="introduction__grid-item introduction__grid-pic-4">
-                <img src="/images/bath-photo-4-plug.png"
-                    alt="Фото бани">
+                <video src="/videos/test.mp4"
+                    muted
+                    autoplay
+                    loop></video>
             </div>
         </div>
     </section>
@@ -74,7 +78,8 @@
                 border-radius: $border-radius-big;
             }
 
-            img {
+            img,
+            video {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -105,6 +110,9 @@
 
         &-title {
             grid-area: title;
+
+            margin-top: auto;
+            margin-bottom: auto;
 
             &-br {
                 @media #{$screen-desktop} {

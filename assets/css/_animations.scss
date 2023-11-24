@@ -1,0 +1,8 @@
+.slide-from-right-enter-active,
+.slide-from-right-leave-active {
+    transition: all 0.5s ease;
+}
+.slide-from-right-enter-from,
+.slide-from-right-leave-to {
+    transform: translateX(100%);
+}

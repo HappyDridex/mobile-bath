@@ -61,6 +61,15 @@
                 </fieldset>
             </form>
         </div>
+        <Teleport to="body">
+            <Transition name="slide-from-right">
+                <UiNotificationPopUp v-if="showPopup"
+                    class="booking-date__popup"
+                    :title="popup.title"
+                    :text="popup.text"
+                    :success="popup.success" />
+            </Transition>
+        </Teleport>
     </section>
 </template>
 
@@ -88,6 +97,20 @@ const disableDates = (date: Date) => {
 const highlightDates = (date: any) => {
     return false
 }
+
+const showPopup = ref(false)
+const successPopup = {
+    title: "Ваша Баня успешно забронирована",
+    text: "Мы Вам перезвоним для подтверждения бронирования",
+    success: true
+}
+const errorPopup = {
+    title: "Произошла ошибка",
+    text: "Повторите позднее...",
+    success: false
+}
+const popup = reactive<typeof successPopup>(successPopup)
+
 
 const formInit = {
     name: "",
@@ -124,14 +147,17 @@ function onDateSelect(newDates: Date[]) {
 }
 
 async function onSubmit() {
-    try {
-        await telegram.sendForm(nomalizedForm.value, formKeysTranslation)
-    } catch (err) {
-        console.log(err)
-    } finally {
-        Object.assign(form, formInit)
-    }
+    const res = await telegram.sendForm(nomalizedForm.value, formKeysTranslation)
+    Object.assign(form, formInit)
+
+    Object.assign(popup, res === true ? successPopup : errorPopup)
+
+    showPopup.value = true
+    setTimeout(() => {
+        showPopup.value = false
+    }, 4000)
 }
+
 
 </script>
 
@@ -178,6 +204,13 @@ async function onSubmit() {
         @media #{$screen-desktop} {
             column-gap: 24px;
         }
+    }
+
+    &__popup {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: $booking-popup-z;
     }
 }
 </style>

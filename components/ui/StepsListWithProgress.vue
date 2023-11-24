@@ -39,7 +39,7 @@ interface IStepsList {
     $marker-size-mobile: 12px;
     $marker-size-tablet: 16px;
 
-    $progress-y-offset-mobile: 40px;
+    $progress-y-offset-mobile: 39px;
     $progress-y-offset-tablet: 52px;
 
 
