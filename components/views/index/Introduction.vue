@@ -17,7 +17,7 @@
                     alt="Фото бани">
             </div>
             <div class="introduction__grid-item introduction__grid-booking">
-                <UiButtonBook />
+                <UiButtonBook @click="emit('book-button-clicked')" />
             </div>
             <div class="introduction__grid-item introduction__grid-title">
                 <h1 class="title title--xxl">АРЕНДА <br class="introduction__grid-title-br">БАНИ-БОЧКИ</h1>
@@ -32,6 +32,10 @@
         </div>
     </section>
 </template>
+
+<script setup lang="ts">
+const emit = defineEmits(['book-button-clicked'])
+</script>
 
 <style lang="scss" scoped>
 .introduction {

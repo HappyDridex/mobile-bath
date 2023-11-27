@@ -7,7 +7,8 @@
                 Баня доставляется на прицепе и проходит тщательную санитарную обработку.
                 Haслaждaйтеcь прямo у вaс на участке, нa рыбалкe или пpосто нa бeрегу oзеpа.
             </p>
-            <UiButtonBook class="why-bath__book-button" />
+            <UiButtonBook class="why-bath__book-button"
+                @click="emit('book-button-clicked')" />
         </div>
         <ul class="why-bath__gallery">
             <li class="why-bath__gallery-item">
@@ -36,6 +37,7 @@ import cardImage2 from "/images/benefit-card-photo-2.png"
 import cardImage3 from "/images/benefit-card-photo-3.png"
 import cardImage4 from "/images/benefit-card-photo-4.png"
 
+const emit = defineEmits(['book-button-clicked'])
 </script>
 
 <style lang="scss" scoped>

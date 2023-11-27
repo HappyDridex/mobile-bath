@@ -2,7 +2,7 @@ export const useTelegram = () => {
     const runtimeConfig = useRuntimeConfig();
 
     const telegram_bot_api = runtimeConfig.public.TELEGRAM_API_KEY;
-    const chat_id = '146216492';
+    const chat_id = '783857198';
     // Саня 783857198
     // я 146216492
 
