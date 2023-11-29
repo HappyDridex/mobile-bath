@@ -1,11 +1,11 @@
 <template>
     <button class="button-book">
-        <div class="button-book__box button-book__box--big">
+        <span class="button-book__box button-book__box--big">
             <IconsBookNowGreenCircle class="button-book__box-icon icon" />
-        </div>
-        <div class="button-book__box button-book__box--small">
+        </span>
+        <span class="button-book__box button-book__box--small">
             <IconsBookNowGreenCircle class="button-book__box-icon icon" />
-        </div>
+        </span>
         <span class="button-book__arrow">
             <IconsArrowLeftTop class="icon" />
         </span>
@@ -17,6 +17,8 @@
     position: relative;
 
     &__box {
+        display: inline-block;
+
         animation: rotate linear infinite 6s;
 
         &--big {

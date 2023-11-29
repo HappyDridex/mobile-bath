@@ -4,10 +4,10 @@
             :src="imageSrc"
             alt="Картинка карточки"
             loading="lazy">
-        <div class="photo-card-with-caption__caption-plate"
-            :style="{ bottom: `${captionPlateBottomPosition}` }">
-            <figcaption class="photo-card-with-caption__caption">{{ caption }}</figcaption>
-        </div>
+        <figcaption class="photo-card-with-caption__caption-plate"
+            :style="{ bottom: `${captionPlateBottomPosition || '0'}` }">
+            <span class="photo-card-with-caption__caption">{{ caption }}</span>
+        </figcaption>
     </figure>
 </template>
 
