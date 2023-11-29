@@ -24,8 +24,8 @@ const emit = defineEmits(["up-button-clicked"])
 
 const links = [
     { text: "+7 (915) 054-47-14", href: "tel:+79150544714" },
-    { text: "Согласие на обработку персональных данных", href: "tel:+79150544714", target: "_blank" },
-    { text: "Политика конфиденциальности", href: "tel:+79150544714", target: "_blank" }
+    { text: "Согласие на обработку персональных данных", href: "/pdf/banya_personal_2023.pdf", target: "_blank" },
+    { text: "Политика конфиденциальности", href: "/pdf/banya_policy_2023.pdf", target: "_blank" }
 ]
 
 </script>
