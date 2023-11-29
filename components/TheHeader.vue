@@ -30,9 +30,11 @@
     }
 
     &__logo {
+        width: 120px;
         height: 52px;
 
         @media #{$screen-tablet} {
+            width: 151px;
             height: 66px;
         }
 
@@ -63,6 +65,7 @@
 
         &-text {
             font-size: $font-size-small;
+            white-space: nowrap;
 
             @media #{$screen-tablet} {
                 font-size: $font-size-large;
