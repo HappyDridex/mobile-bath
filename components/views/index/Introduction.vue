@@ -6,11 +6,15 @@
                     alt="Фото бани">
             </div>
             <div class="introduction__grid-item introduction__grid-pic-2">
-                <video src="/videos/test2.mp4"
-                    muted
+                <video muted
                     autoplay
                     playsinline
-                    loop></video>
+                    loop>
+                    <source src="/videos/banya-video-2.mp4"
+                        type="video/mp4; codecs=mp4a.40.2" />
+                    <source src="/videos/banya-video-2.webm"
+                        type="video/webm; codecs=vp8" />
+                </video>
             </div>
             <div class="introduction__grid-item introduction__grid-pic-3">
                 <img src="/images/bath-photo-3.png"
@@ -23,11 +27,15 @@
                 <h1 class="title title--xxl">АРЕНДА <br class="introduction__grid-title-br">БАНИ-БОЧКИ</h1>
             </div>
             <div class="introduction__grid-item introduction__grid-pic-4">
-                <video src="/videos/test.mp4"
-                    muted
+                <video muted
                     autoplay
                     playsinline
-                    loop></video>
+                    loop>
+                    <source src="/videos/banya-video-1.mp4"
+                        type="video/mp4; codecs=mp4a.40.2" />
+                    <source src="/videos/banya-video-1.webm"
+                        type="video/webm; codecs=vp8" />
+                </video>
             </div>
         </div>
     </section>

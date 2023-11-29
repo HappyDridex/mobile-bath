@@ -1,7 +1,12 @@
 <template>
     <header class="header">
         <div class="header__inner container">
-            <h2 class="header__title title title--big">БАНЯ-БОЧКА</h2>
+            <NuxtLink to="/"
+                class="header__logo">
+                <img class="header__logo-pic"
+                    src="/images/logo.png"
+                    alt="Логотип">
+            </NuxtLink>
             <a href="tel:+79150544714"
                 class="header__phone">
                 <IconsPhoneOutline class="header__phone-icon" />
@@ -20,8 +25,21 @@
         align-items: center;
         justify-content: space-between;
 
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+    &__logo {
+        height: 52px;
+
+        @media #{$screen-tablet} {
+            height: 66px;
+        }
+
+        &-pic {
+            @include object-contain-full;
+        }
+
     }
 
     &__phone {

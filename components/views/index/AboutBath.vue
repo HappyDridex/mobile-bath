@@ -68,6 +68,7 @@ import cardImage4 from "/images/about-card-photo-4.png"
         &-container {
             height: 72vw;
             padding-left: 18px;
+            padding-right: 18px;
             overflow: hidden;
 
             @media #{$screen-tablet} {
@@ -76,13 +77,14 @@ import cardImage4 from "/images/about-card-photo-4.png"
             }
 
             @media #{$screen-desktop} {
-                padding-left: 80px;
                 @include margin-left-to-container;
+
+                padding-left: 80px;
             }
         }
 
         &-item {
-            height: 90%;
+            height: 100%;
 
             transition: all .7s ease;
 
@@ -90,13 +92,10 @@ import cardImage4 from "/images/about-card-photo-4.png"
                 width: 298px !important;
             }
 
-            @media #{$screen-desktop} {
-                height: 100%;
-            }
-
             &--active {
                 height: 100%;
             }
+
         }
     }
 }

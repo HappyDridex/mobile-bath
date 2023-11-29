@@ -9,13 +9,13 @@
                     inline
                     auto-apply
                     :flow="flow"
-                    vertical
                     :clearable="false"
                     :hide-navigation="['time']"
                     :locale="'ru'"
                     hide-offset-dates
                     :disabled-dates="disableDates"
                     :highlight="highlightDates"
+                    month-name-format="long"
                     :year-range="[+new Date().getFullYear(), +new Date().getFullYear() + 1]"
                     @update:model-value="onDateSelect" />
             </div>

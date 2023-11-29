@@ -72,30 +72,44 @@
             }
         }
 
-        &--arrow-btn-nav {
-            margin-right: 20px;
-
-            transform: rotate(-90deg);
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-
         &__inner_nav {
             width: $cell-size-mobile;
             height: $cell-size-mobile;
 
             border-radius: $border-radius-minimal;
+            background-color: transparent;
 
             @media #{$screen-tablet} {
                 width: $cell-size-tablet;
                 height: $cell-size-tablet;
             }
 
-            &:hover {
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    background-color: rgba($color-accent, 0.5);
+                    color: $color-primary-dark;
+                }
+            }
+
+            &:active {
                 background-color: rgba($color-accent, 0.5);
                 color: $color-primary-dark;
+            }
+
+            &:first-child {
+                margin-right: 10px;
+
+                @media #{$screen-tablet} {
+                    margin-right: 20px;
+                }
+            }
+
+            &:last-child {
+                margin-left: 10px;
+
+                @media #{$screen-tablet} {
+                    margin-left: 20px;
+                }
             }
 
             svg {
@@ -229,7 +243,7 @@
 
         &__overlay {
             font-family: $font-family-primary;
-            font-size: $font-size-large;
+            font-size: $font-size-big;
             line-height: $line-height-medium;
 
             border: none;
