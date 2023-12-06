@@ -21,7 +21,7 @@ const cards = [
     { title: "Банные веники", text: "Отборный кавказкий дуб", price: "400₽/шт", imgSrc: cardPhoto1 },
     { title: "Дрова", text: "Одна порция (2-3 часа парения, не считая растопки)", price: "500₽/шт", imgSrc: cardPhoto2 },
     { title: "Услуги банщика (истопника)", text: "От 2-х часов", price: "2500₽/час", imgSrc: cardPhoto3 },
-    { title: "Аренда купели", text: "Отборный кавказкий дуб", price: "3500₽/сут.", imgSrc: cardPhoto4 }
+    // { title: "Аренда купели", text: "Отборный кавказкий дуб", price: "3500₽/сут.", imgSrc: cardPhoto4 }
 ]
 
 </script>
