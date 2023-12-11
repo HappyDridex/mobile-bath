@@ -18,6 +18,17 @@ export default defineNuxtConfig({
             },
         },
     },
+    modules: [
+        'nuxt-swiper',
+        [
+            'yandex-metrika-module-nuxt3',
+            {
+                id: '95831255',
+                webvisor: true,
+                consoleLog: false,
+            },
+        ],
+    ],
     runtimeConfig: {
         public: {
             TELEGRAM_API_KEY: '6956294615:AAEw4tn5ObdMFj3Ici64RCHparINlPg_rnQ',
@@ -30,5 +41,4 @@ export default defineNuxtConfig({
             cssnano: {},
         },
     },
-    modules: ['nuxt-swiper'],
 });

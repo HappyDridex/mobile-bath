@@ -21,6 +21,7 @@
         "@vuepic/vue-datepicker": "^7.2.2",
         "date-fns": "^2.30.0",
         "nuxt-swiper": "^1.2.2",
-        "sass": "^1.69.5"
+        "sass": "^1.69.5",
+        "yandex-metrika-module-nuxt3": "^1.5.3"
     }
 }
