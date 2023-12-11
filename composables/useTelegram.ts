@@ -11,7 +11,7 @@ export const useTelegram = () => {
 
         for (let key in formKeysTranslation) {
             formKeysTranslation[key] = form[formKeysTranslation[key]];
-            message += `\n${key}: ${key === 'Телефон' ? `+${formKeysTranslation[key]}` : formKeysTranslation[key]}`;
+            message += `\n${key}: ${formKeysTranslation[key]}`;
         }
 
         const url = 'https://api.telegram.org/bot' + telegram_bot_api + '/sendMessage';
