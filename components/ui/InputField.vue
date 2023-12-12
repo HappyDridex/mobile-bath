@@ -86,7 +86,7 @@ watchEffect(() => {
         @media #{$screen-tablet} {
             font-size: $font-size-big;
 
-            padding: 28px 24px;
+            padding: 24px;
 
             border-radius: $border-radius-normal;
             border-width: 1.5px;
