@@ -13,7 +13,7 @@
         </ul>
         <button class="footer__button-up"
             @click="emit('up-button-clicked')">
-            <IconsArrowTop />
+            <SvgIcon name="arrow-top" />
         </button>
     </footer>
 </template>

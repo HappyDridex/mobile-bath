@@ -1,13 +1,15 @@
 <template>
     <button class="button-book">
         <span class="button-book__box button-book__box--big">
-            <IconsBookNowGreenCircle class="button-book__box-icon icon" />
+            <SvgIcon class="button-book__box-icon"
+                name="book-now-green-circle" />
         </span>
         <span class="button-book__box button-book__box--small">
-            <IconsBookNowGreenCircle class="button-book__box-icon icon" />
+            <SvgIcon name="book-now-green-circle" />
         </span>
         <span class="button-book__arrow">
-            <IconsArrowLeftTop class="icon" />
+            <SvgIcon class="button-book__box-icon"
+                name="arrow-left-top" />
         </span>
     </button>
 </template>

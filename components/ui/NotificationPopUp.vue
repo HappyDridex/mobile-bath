@@ -6,7 +6,8 @@
                     'notification-pop-up__icon--success': success,
                     'notification-pop-up__icon--error': !success
                 }">
-                <IconsFireFilled class="notification-pop-up__icon-pic" />
+                <SvgIcon class="notification-pop-up__icon-pic"
+                    name="arrow-left-top" />
             </div>
             <div class="notification-pop-up__content">
                 <h3 class="notification-pop-up__title">

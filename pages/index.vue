@@ -6,7 +6,7 @@
             @book-button-clicked="scrollToBooking" />
         <LazyViewsIndexAboutBath class="index-page__section" />
         <ViewsIndexBookingDate class="index-page__section"
-            ref="viewBookingDate" />
+            ref="bookingDateRef" />
         <LazyViewsIndexRentConditions class="index-page__section" />
         <LazyViewsIndexRentSteps class="index-page__section" />
         <LazyViewsIndexAdditionalServices class="index-page__section" />
@@ -20,16 +20,22 @@ definePageMeta({ layout: "default" });
 useHead({
     title: "Аренда бани бочки",
     meta: [
-        { name: "description", content: "Баня на прицепе из натуральной древесины с дровяной печью и полностью готовая к использованию. Заказать удобно, привезем быстро!" },
-        { name: "keywords", content: "автобаня на колесах, аренда бани, аренда бани бочки, баня бочка, аренда бани бочки на прицепе, аренда бани на колесах, баня аренда, баня бочка аренда, баня бочка снять, баня на колёсах, выездная баня на колесах, снять баню на колесах" }
+        {
+            name: "description",
+            content: "Баня на прицепе из натуральной древесины с дровяной печью и полностью готовая к использованию. Заказать удобно, привезем быстро!"
+        },
+        {
+            name: "keywords",
+            content: "автобаня на колесах, аренда бани, аренда бани бочки, баня бочка, аренда бани бочки на прицепе, аренда бани на колесах, баня аренда, баня бочка аренда, баня бочка снять, баня на колёсах, выездная баня на колесах, снять баню на колесах"
+        }
     ]
 })
 
-const viewBookingDate = ref<any>(null);
+const bookingDateRef = ref<any>(null);
 
 function scrollToBooking() {
-    if (viewBookingDate.value) {
-        viewBookingDate.value.$el.scrollIntoView({
+    if (bookingDateRef.value) {
+        bookingDateRef.value.$el.scrollIntoView({
             behavior: "smooth"
         })
     }

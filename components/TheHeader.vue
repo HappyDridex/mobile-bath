@@ -9,7 +9,8 @@
             </NuxtLink>
             <a href="tel:+79150544714"
                 class="header__phone">
-                <IconsPhoneOutline class="header__phone-icon" />
+                <SvgIcon class="header__phone-icon"
+                    name="phone-outline" />
                 <span class="header__phone-text">
                     +7 (915) 054-47-14
                 </span>

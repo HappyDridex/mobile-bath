@@ -9,7 +9,7 @@
                     :key="method.href">
                     <UiContactMethodItem :text="method.text"
                         :href="method.href">
-                        <component :is="method.icon" />
+                        <SvgIcon :name="method.icon" />
                     </UiContactMethodItem>
                 </li>
             </ul>
@@ -19,16 +19,11 @@
 
 <script setup lang="ts">
 
-const IconPhoneOutline = resolveComponent("IconsPhoneOutline");
-const IconWhatsAppOutline = resolveComponent("IconsWhatsAppOutline");
-const IconTelegramFilled = resolveComponent("IconsTelegramFilled");
-const IconMessage = resolveComponent("IconsMessage");
-
 const contactMethods = [
-    { text: "+7 (915) 054-47-14", href: "tel:+79150544714", icon: IconPhoneOutline },
-    { text: "+7 (995) 508-55-32", href: "https://wa.me/79955085532", icon: IconWhatsAppOutline },
-    { text: "@Banya_msk1", href: "https://t.me/BochkaBanya", icon: IconTelegramFilled },
-    { text: "banya.moscow@gmail.com", href: "mailto:banya.moscow@gmail.com", icon: IconMessage }
+    { text: "+7 (915) 054-47-14", href: "tel:+79150544714", icon: "phone-outline" },
+    { text: "+7 (995) 508-55-32", href: "https://wa.me/79955085532", icon: "whatsapp-outline" },
+    { text: "@Banya_msk1", href: "https://t.me/BochkaBanya", icon: "telegram-filled" },
+    { text: "banya.moscow@gmail.com", href: "mailto:banya.moscow@gmail.com", icon: "message" }
 ]
 
 </script>

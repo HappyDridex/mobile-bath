@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     },
     modules: [
         'nuxt-swiper',
+        '@nuxtjs/svg-sprite',
         [
             'yandex-metrika-module-nuxt3',
             {
