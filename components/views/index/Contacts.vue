@@ -22,7 +22,7 @@
 const contactMethods = [
     { text: "+7 (915) 054-47-14", href: "tel:+79150544714", icon: "phone-outline" },
     { text: "+7 (995) 508-55-32", href: "https://wa.me/79955085532", icon: "whatsapp-outline" },
-    { text: "@Banya_msk1", href: "https://t.me/BochkaBanya", icon: "telegram-filled" },
+    { text: "@BochkaBanya", href: "https://t.me/BochkaBanya", icon: "telegram-filled" },
     { text: "banya.moscow@gmail.com", href: "mailto:banya.moscow@gmail.com", icon: "message" }
 ]
 
