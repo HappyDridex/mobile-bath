@@ -2,9 +2,13 @@ export default defineNuxtConfig({
     app: {
         head: {
             htmlAttrs: {
-                lang: 'en',
+                lang: 'ru',
             },
-            meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+            meta: [
+                { charset: 'utf-8' },
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                { name: 'google-site-verification', content: 'T1OZh3f3wjzF8as-IK4nTaRjGQhBMETHc43fE_2GfF4' },
+            ],
         },
     },
     vite: {
