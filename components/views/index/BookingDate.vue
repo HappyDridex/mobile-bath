@@ -104,7 +104,7 @@ const highlightDates = (date: any) => {
     if (date instanceof Date) {
         const dateObj = new Date(date);
         const dateString = format(dateObj, 'dd.MM.yyyy')
-        if (buzyDays[bathId].includes(dateString)) {
+        if (buzyDays?.[bathId]?.includes(dateString)) {
             return true
         }
     }
